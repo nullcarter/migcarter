@@ -1,5 +1,5 @@
 module.exports = {
-  title: "MigCater",
+  title: "MigCarter",
   description: "just a dev's blog",
   themeConfig: {
     nav: [{ text: "home", link: "/" }, { text: "blog", link: "/blog/" }],
