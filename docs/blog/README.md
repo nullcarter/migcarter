@@ -1,0 +1,4 @@
+---
+layout: PostsLayout
+---
+<Posts />
