@@ -31,9 +31,29 @@ const person = new Customer('John', 'Smith');
 
 ```
 
-When the `Customer` constructor is invoked, it will take the `firstName` and `lastName` parameters and assign them to the  current instance. In case of the code above `John` and `Smith` are assigned to `person`.
+When the `Customer` constructor is invoked, it will take the `firstName` and `lastName` parameters and assign them to the current instance. In case of the code above `John` and `Smith` are assigned to `person` variable as an object. In the code below the same thing happens, the parameters of each invocation are assigned to variables that invoked the constructor functions.
 
 ```js
-const person2 = new Customer('John', 'Smith');
-const person3 = new Customer('John', 'Smith');
+const person2 = new Customer('Joe', 'Snuffington');
+const person3 = new Customer('Bobby', 'Remington');
 ```
+
+if we log the properties of each variable we can double check that they were assigned correctly.
+
+```js
+console.log(person.firstName); // John
+console.log(person2.firstName); // Joe
+console.log(person3.firstName); // Bobby
+```
+
+## More Control with Object.defineProperty()
+
+Now that we know how to create/use a constructor we can see how to use __[Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)__ in combination with the constructor to have more control over the properties of our objects. Try to understnad the code below.
+
+```js
+function Person(firstName) {
+  
+}
+```
+
+## Conclusion
